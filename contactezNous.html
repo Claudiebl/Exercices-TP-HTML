@@ -14,5 +14,51 @@
         <a href="http://127.0.0.1:5500/nosReferences.html" title="Allez sur Nos Références">Nos Références</a>
         <a href="http://127.0.0.1:5500/contactezNous.html" title="Contactez-nous">Contactez-nous</a>
     </header>
+    <h1>Contactez-nous</h1>
+    <form method="get">
+        <label for="nom">Nom Prénom</label>
+            <input type="text" id="nom" name="nom"><br>
+        <label for="email">Adresse mail</label>
+            <input type="email" id="email" name="email"><br>
+        <label for="tel">Téléphone</label>
+            <input type="tel" id="tel" name="tel"><br>
+        <label for="situation">Vous êtes</label>
+            <input type="radio" name="situation" id="sansemploi">
+            <label for="sansemploi">Demandeur·se d'emploi</label>
+            <input type="radio" name="situation" id="reconversion">
+            <label for="reconversion">Salarié·e en transition pro</label>
+            <input type="radio" name="situation" id="autre">
+            <label for="autre">Autre</label><br>
+        <label for="modalite">Vos modalités préférées</label>
+            <input type="radio" name="modalite" id="presentiel">
+            <label for="presentiel">Formation en présentiel</label>
+            <input type="radio" name="modalite" id="distanciel">
+            <label for="distanciel">100% à distance</label>
+            <input type="radio" name="modalite" id="alternance">
+            <label for="alternance">Alternance</label>
+            <input type="radio" name="modalite" id="wtv">
+            <label for="wtv">Pas de préférence</label><br>
+        <label for="region">Vous résidez en</label>
+            <select name="region" id="region">
+                <option value="choix">Choisisez votre région</option>
+                <option value="auvergne">Auvergne-Rhône-Alpes</option>
+                <option value="bourgogne">Bourgogne-Frane-Comté</option>
+                <option value="bretagne">Bretagne</option>
+                <option value="Centre">Centre-Val de Loire</option>
+                <option value="Corse">Corse</option>
+                <option value="est">Grand Est</option>
+                <option value="Hauts">Hauts-de-France</option>
+                <option value="Ile">Ile-De-France</option>
+                <option value="Normandie">Normandie</option>
+                <option value="Aquitaine">Nouvelle-Aquitaine</option>
+                <option value="Occitanie">Occitanie</option>
+                <option value="Loire">Pays de la Loire</option>
+                <option value="Azur">Provence-Alpes-Côte d'Azur</option>
+                <option value="domtom">Régions et département d'Outremer</option>
+            </select><br>
+        <label for="message">Votre message</label>
+            <textarea name="message" id="message">Commentaire?</textarea><br>
+        <input type="submit" value="Envoyez">
+    </form>
 </body>
 </html>

@@ -1,0 +1,138 @@
+body{
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-image: url(/image/A2-1920.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* 
+color scheme:
+#78BE20 - green
+#FFFFFF - white
+#000000 - black
+#418FDE - blue
+#FA4616 - orange
+#008C95 - teal
+*/
+ 
+nav{
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    }
+
+nav img{
+    margin: 0 15px;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    margin: 0 10px;
+    padding: 0;
+    justify-content: space-around;
+}
+
+nav ul li{
+    display: flex;
+    flex-grow: 1;
+}
+
+nav ul li a{
+    display: flex;
+    flex-grow: 1;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+nav ul li a:hover{
+    background-color: #78BE20;
+    color: white;
+}
+
+header{
+    position: relative;
+    margin: 120px;
+    background-color: rgba(0, 0, 0, 0.50);
+    border-radius: 100px 0% 100px 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 56px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.691)
+}
+
+header h1{
+    color: white;
+    text-transform: uppercase;
+    font-size: 4.5vw;
+    text-align: left;
+    margin: 10px;
+}
+
+button{
+    background-color: #78BE20;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 10px;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    transition: all 0.2s ease;
+}
+
+button:hover{
+    background-color: white;
+    color: #78BE20;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.802)
+}
+
+header h2{
+    color: white;
+    font-size: 2vw;
+    text-align: right;
+    margin: 80px 10px 10px 10px;
+    font-weight: normal;
+}
+
+@media screen and (max-width:1024px) {
+
+    nav{
+        flex-direction: column;
+        align-items: center
+    }
+
+    nav ul{
+        flex-direction: column;
+        width: 100%;
+        font-size: 3vw;
+        margin: 10px;
+    }
+
+    header{
+        margin: 50px;
+        margin-top: 60px;   
+        padding: 30px;
+    }
+
+    button{
+        width: 80%;
+        font-size: 3vw;
+    };
+}

@@ -1,0 +1,98 @@
+body{
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-image: url(/image/A3-1920.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* 
+color scheme:
+#78BE20 - green
+#FFFFFF - white
+#000000 - black
+#418FDE - blue
+#FA4616 - orange
+#008C95 - teal
+*/
+ 
+nav{
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    }
+
+nav img{
+    margin: 0 15px;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    margin: 0 10px;
+    padding: 0;
+    justify-content: space-around;
+}
+
+nav ul li{
+    display: flex;
+    flex-grow: 1;
+}
+
+nav ul li a{
+    display: flex;
+    flex-grow: 1;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+nav ul li a:hover{
+    background-color: #78BE20;
+    color: white;
+}
+
+header{
+    color: white;
+}   
+
+header h2{
+    margin: 20px 0 0 0;
+    font-size: 3vw;
+    text-align: left;
+    margin-left: 100px;
+}
+
+header h1{
+    margin: 0;
+    font-size: 5vw;
+    text-align: right;
+    margin-right: 100px;
+}
+
+
+@media screen and (max-width:1024px) {
+
+    nav{
+        flex-direction: column;
+        align-items: center
+    }
+
+    nav ul{
+        flex-direction: column;
+        width: 100%;
+        font-size: 3vw;
+        margin: 10px;
+    }
+}
